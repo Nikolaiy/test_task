@@ -1,0 +1,55 @@
+.header {
+    padding-top: 30px;
+
+    &__text {
+        color: #1d1d1d;
+        font-weight: 300;
+        line-height: 19px;
+    }
+
+    &__phone {
+        position: relative;
+
+        & .tel {
+            font-size: 16px;
+            font-weight: bold;
+            color: #070707;
+            margin: 0 0 -5px;
+        }
+
+        & .call-free {
+            color: #1d1d1d;
+            font-weight: 300;
+            line-height: 19px;
+        }
+
+        &:before {
+            content: "";
+            background-image: url(../../images/icon/phone.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 25px;
+            height: 28px;
+            top: 20%;
+            left: -20px;
+        }
+
+    }
+
+    &__address {
+        color: #1d1d1d;
+        font-size: 14px;
+        line-height: 19px;
+
+        &:before {
+            content: "";
+            background-image: url(../../images/icon/local.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 25px;
+            height: 28px;
+            top: 20%;
+            left: -20px;
+        }
+    }
+}

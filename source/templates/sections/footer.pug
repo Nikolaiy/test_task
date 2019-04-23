@@ -1,0 +1,16 @@
+footer.footer
+    .container
+        .row
+            .col
+                - var items = ["Навигация", "Информация", "Контакты", "Время работы", "О нас", "Портфолио"]
+                each item in items
+                    a.nav__link(href="#")=item
+        .row
+            .col
+                .footer__copyright.
+                    Высокий уровень вовлеченности представителей ццелевой аудитории является четким доказательством простого факта: высокотехнологичнвя.
+        .row
+            .col.footer__social
+                a(href="#"): i.fa.fa-fb FB
+                a(href="#"): i.fa.fa-tw TW
+                a(href="#"): i.fa.fa-vk VK

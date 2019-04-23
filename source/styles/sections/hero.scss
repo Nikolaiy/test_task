@@ -1,0 +1,15 @@
+.hero {
+    background-image: url(../../images/bg_font.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 187px;
+    padding-bottom: 187px;
+
+    &__title {
+        color: #282828;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 52.03px;
+    }
+}

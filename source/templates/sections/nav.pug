@@ -1,0 +1,15 @@
+nav.nav
+    .container
+        .row.nav__wrapper
+            .col-10
+                - var items = ["Услуги", "О нас", "Портфолио", "Контакты", "Отзывы", "Новости"]
+                each item in items
+                    if item == "Услуги"
+                        a.nav__link.nav__link-active(href="#")=item
+                    else
+                        a.nav__link(href="#")=item
+            .col.nav__action
+                a(href="#"): img(src="../images/icon/search.svg", alt="")
+                a(href="#"): img(src="../images/icon/basket.svg", alt="")
+                a(href="#"): img(src="../images/icon/account.svg", alt="")
+                
