@@ -1,0 +1,21 @@
+.portfolio {
+    padding: 80px 0;
+
+    &__block-img {
+        margin-top: 10px;
+    }
+
+    &__wraper {
+        text-align: center;
+    }
+
+    &__text {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    &-btn {
+        padding: 10px 40px;
+    }
+
+}

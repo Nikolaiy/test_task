@@ -1,0 +1,57 @@
+.advantage {
+    padding: 80px 0;
+    background-image: url(../../images/architecture_0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+
+    &__title {
+        color: #ffffff !important; 
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__wraper {
+        text-align: center;
+    }
+    & img {
+        padding-bottom: 1px;
+
+        &:nth-child(2n) {
+            padding: 30px 0; 
+        }
+
+    }
+
+    &__img {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            background-color: transparent;
+        }
+
+    }
+
+    &__heading {
+        margin: 10px 0;
+        font-weight: 600;
+    }
+
+    &__desc {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+}

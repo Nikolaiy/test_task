@@ -4,12 +4,26 @@
     background-size: cover;
     background-position: center;
     padding-top: 187px;
-    padding-bottom: 187px;
+    padding-bottom: 365px;
 
     &__title {
         color: #282828;
         font-size: 40px;
         font-weight: 700;
         line-height: 52.03px;
+        margin-bottom: 15px;
     }
+
+    &__desc {
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+
+    &__btn {
+        width: 175px;
+        font-size: 14px;
+        padding: 15px 20px;
+        margin-right: 10px;
+    }
+
 }
