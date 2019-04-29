@@ -1,3 +1,65 @@
 .comment {
+    background-color: #e2e2e2;
     padding: 80px 0;
+
+    &__block {
+        margin-bottom: 40px;
+    }
+
+    &__img {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        
+        &-wrap {
+            display: flex;
+            align-items: center;
+        }
+
+    }
+
+    &__wrapper {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 15px 15px 15px 30px;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -60px;
+            border: 30px solid transparent;
+            border-right: 30px solid #fff;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__name {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    &__city {
+        font-size: 13px;
+        color: #bab8b8;
+        margin-right: 5px;
+
+    }
+
+    &__date {
+        font-size: 13px;
+        color: red;
+    }
+
+    &__desc {
+        font-weight: 500;
+    }
+
+    &-btn {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 50px;
+    }
+
 }

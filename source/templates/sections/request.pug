@@ -1,19 +1,19 @@
-.comment
+.request
     .container
             .row
                 .col
-                    .comment__title.title Оставьте заявку
-                    .comment__desc и мы свяжемся с вами в ближайшее время! 
+                    .request__title Оставьте заявку
+                    .request__desc и мы свяжемся с вами в ближайшее время! 
             .row
                 .col
                     form.form-group(action="" method="post")
                         input(type="text" placeholder="ваше имя")
-                        i.fa.fa-acount
+                        img(src="images/icon/account.svg", alt="")
                         input(type="tel" placeholder="Ваш телефон")
-                        i.fa.fa-phone
+                        img(src="images/icon/account.svg", alt="")
                         input(type="email" placeholder="ваш E-mail")
-                        i.fa.fa-email
-                        input(type="checkbox") 
-                        label Я согласен(а) на обработку моих персональных данных.
-                    button.btn.btn-danger Отправить заявку 
+                        img(src="images/icon/account.svg", alt="")
+                    input(type="checkbox") 
+                    label Я согласен(а) на обработку моих персональных данных.
+                    button.btn.request-btn.btn-danger Отправить заявку 
                         
