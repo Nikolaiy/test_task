@@ -24,15 +24,34 @@
         padding: 15px 15px 15px 30px;
         position: relative;
 
-        &:before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: -60px;
-            border: 30px solid transparent;
-            border-right: 30px solid #fff;
-            transform: translateY(-50%);
+        &-right {
+            
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: -60px;
+                border: 30px solid transparent;
+                border-left: 30px solid #fff;
+                transform: translateY(-50%);
+            }
+
         }
+
+        &-left {
+            
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: -60px;
+                border: 30px solid transparent;
+                border-right: 30px solid #fff;
+                transform: translateY(-50%);
+            }
+
+        }
+
     }
 
     &__name {

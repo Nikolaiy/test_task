@@ -162,13 +162,12 @@
         </div>
       </div>
     </div>
+    <div class="advantage__mask"></div>
     <div class="advantage">
       <div class="container">
         <div class="row">
           <div class="col">
-            <div class="advantage__title">
-              <div class="title">Наши преимущества</div>
-            </div>
+            <div class="advantage__title title">Наши преимущества</div>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -234,7 +233,7 @@
         </div>
         <div class="row comment__block">
           <div class="col comment__img-wrap"><img class="comment__img" src="images/anna.jpg" alt="Фото круглое"/></div>
-          <div class="col-9 comment__wrapper">
+          <div class="col-9 comment__wrapper comment__wrapper-left">
             <div class="comment__name">Иванова Мария Ивановна</div><span class="comment__city">г. Екатеринбург,</span><span class="comment__date">22.12.20108</span>
             <div class="comment__desc">
               Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высокотехнологичная концепция общественного уклада не дает 
@@ -245,8 +244,7 @@
           </div>
         </div>
         <div class="row comment__block">
-          <div class="col comment__img-wrap"><img class="comment__img" src="images/anna1.jpg" alt="Фото круглое"/></div>
-          <div class="col-9 comment__wrapper">
+          <div class="col-9 comment__wrapper comment__wrapper-right">
             <div class="comment__name">Иванова Анна Ивановна</div><span class="comment__city">г. Екатеринбург,</span><span class="comment__date">22.12.20108</span>
             <div class="comment__desc">
               Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высокотехнологичная концепция общественного уклада не дает 
@@ -255,10 +253,11 @@
               требует ующих условий активизации.
             </div>
           </div>
+          <div class="col comment__img-wrap justify-content-end"><img class="comment__img" src="images/anna1.jpg" alt="Фото круглое"/></div>
         </div>
         <div class="row comment__block">
           <div class="col comment__img-wrap"><img class="comment__img" src="images/ivan.jpg" alt="Фото круглое"/></div>
-          <div class="col-9 comment__wrapper">
+          <div class="col-9 comment__wrapper comment__wrapper-left">
             <div class="comment__name">Иванов Иван Иванович</div><span class="comment__city">г. Екатеринбург,</span><span class="comment__date">22.12.20108</span>
             <div class="comment__desc">
               Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высокотехнологичная концепция общественного уклада не дает 
@@ -282,6 +281,58 @@
             <div class="work__title title">Этапы работы</div>
           </div>
         </div>
+        <div class="row justify-content-start work__wrap">
+          <div class="col-5">
+            <div class="work__title-min">Оформление заявки</div>
+            <div class="work__text-min">
+              Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Possimus, voluptatem.
+              Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Possimus, voluptatem.
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="work__number">1.</div>
+          </div>
+        </div>
+        <div class="row justify-content-end work__wrap">
+          <div class="col-2">
+            <div class="work__number">2.</div>
+          </div>
+          <div class="col-5">
+            <div class="work__title-min">Предоставление материалов </div>
+            <div class="work__text-min">
+              Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Possimus, voluptatem.
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-start work__wrap">
+          <div class="col-5">
+            <div class="work__title-min">Создание сайта</div>
+            <div class="work__text-min">
+              Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Possimus, voluptatem.
+              Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Possimus, voluptatem.
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="work__number">3.</div>
+          </div>
+        </div>
+        <div class="row justify-content-end work__wrap">
+          <div class="col-2">
+            <div class="work__number">4.</div>
+          </div>
+          <div class="col-5">
+            <div class="work__title-min">Сдача готовых работ</div>
+            <div class="work__text-min">
+              Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Possimus, voluptatem.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="request">
@@ -295,9 +346,9 @@
         <div class="row">
           <div class="col">
             <form class="form-group" action="" method="post">
-              <input type="text" placeholder="ваше имя"/><img src="images/icon/account.svg" alt=""/>
-              <input type="tel" placeholder="Ваш телефон"/><img src="images/icon/account.svg" alt=""/>
-              <input type="email" placeholder="ваш E-mail"/><img src="images/icon/account.svg" alt=""/>
+              <input class="form-input" type="text" placeholder="Ваше имя"/><img class="form-icon" src="images/phone.png" alt=""/>
+              <input class="form-input" type="tel" placeholder="Ваш телефон"/><img class="form-icon" src="images/phone.png" alt=""/>
+              <input class="form-input" type="email" placeholder="Ваш E-mail"/><img class="form-icon" src="images/phone.png" alt=""/>
             </form>
             <input type="checkbox"/>
             <label>Я согласен(а) на обработку моих персональных данных.</label>
@@ -347,11 +398,31 @@
         </div>
       </div>
     </div>
+    <div class="contact">
+      <div class="row">
+        <div class="col-6 contact__block">
+          <div class="contact__wrap">
+            <div class="contact__title">Контакты</div>
+            <div class="contact__phone">+7 (922) 222-22-22</div>
+            <div class="contact__email">uidkkn@mail.ru</div>
+            <div class="contact__desc">
+              Высокий уровень вовлечения
+              Высокий уровень вовлечения
+              Высокий уровень вовлечения
+              Высокий уровень вовлечения
+              Высокий уровень вовлечения
+              Высокий уровень вовлечения
+            </div>
+            <div class="contact__social"><a href="#"><i class="fa">FB</i></a><a href="#"><i class="fa">TW</i></a><a href="#"><i class="fa">VK</i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="pairs">
       <div class="container">
         <div class="row">
-          <div class="col">
-            <div class="pairs title">Партнеры</div>
+          <div class="col-8 pairs__wrap">
+            <div class="pairs__title title">Партнеры</div>
             <div class="pairs__desc">
               Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высокотехнологичная концепция общественного
               уклада не дает нам иного выбора, кроме определения поэтапного.
@@ -359,23 +430,23 @@
           </div>
         </div>
         <div class="row">
-          <div class="slider"></div>
+          <div class="col">
+            <div class="carousel slide" id="carousel-example-generic" data-ride="carousel"></div>
+          </div>
         </div>
       </div>
     </div>
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col"><a class="nav__link" href="#">Навигация</a><a class="nav__link" href="#">Информация</a><a class="nav__link" href="#">Контакты</a><a class="nav__link" href="#">Время работы</a><a class="nav__link" href="#">О нас</a><a class="nav__link" href="#">Портфолио</a>
+          <div class="col-9 footer__nav"><a class="nav__link" href="#">Навигация</a><a class="nav__link" href="#">Информация</a><a class="nav__link" href="#">Контакты</a><a class="nav__link" href="#">Время работы</a><a class="nav__link" href="#">О нас</a><a class="nav__link" href="#">Портфолио</a>
           </div>
         </div>
         <div class="row">
-          <div class="col">
-            <div class="footer__copyright">Высокий уровень вовлеченности представителей ццелевой аудитории является четким доказательством простого факта: высокотехнологичнвя.</div>
-          </div>
+          <div class="col-9 footer__copyright">Высокий уровень вовлеченности представителей ццелевой аудитории является четким <br> доказательством простого факта: высокотехнологичнвя.</div>
         </div>
         <div class="row">
-          <div class="col footer__social"><a href="#"><i class="fa fa-fb">FB</i></a><a href="#"><i class="fa fa-tw">TW</i></a><a href="#"><i class="fa fa-vk">VK</i></a></div>
+          <div class="col footer__social"><a href="#"><i class="fa">FB</i></a><a href="#"><i class="fa">TW</i></a><a href="#"><i class="fa">VK</i></a></div>
         </div>
       </div>
     </footer>

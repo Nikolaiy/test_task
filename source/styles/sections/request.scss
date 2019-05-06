@@ -6,6 +6,7 @@
     background-size: cover;
     text-align: center;
     color: #fff;
+    // filter: brightness(0.60);
 
     &__title {
         position: relative;
@@ -33,7 +34,7 @@
     &-btn {
         display: block;
         margin: 0 auto;
-        margin-top: 50px;
+        margin-top: 30px;
         padding: 10px 50px;
     }
 
@@ -41,13 +42,19 @@
 
 .form-group {
     margin: 0 auto;
-    width: 500px;
+    width: 600px;
 
     & input {
-        position: relative;
         color: #000;
+        font-size: 13px;
+        font-weight: bold;
         margin-bottom: 20px;
         padding: 10px;
-        width: 400px;
+        width: 500px;
     }
+}
+
+.form-icon {
+    position: relative;
+    left: -30px;
 }

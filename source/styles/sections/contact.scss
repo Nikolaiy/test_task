@@ -1,0 +1,94 @@
+.contact {
+    color: #ffffff;
+    background-image: url(../../images/karta.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__block {
+        height: 600px;
+        padding-top: 200px;
+        padding-left: 500px;
+        padding-right: 80px;
+        float: left;
+        background-color: #2c2c2c;
+    }
+
+    &__title {
+        position: relative;
+        color: #ffffff;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 13.29px;
+        margin-bottom: 50px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 70px;
+            height: 2px;
+            background-color: #ffffff;
+        }
+    }
+
+    &__phone {
+        margin-left: 30px;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: -40px;
+            // background-color: #fff;
+            background-image: url(../../images/icon/email.svg);
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+        }
+
+    }
+
+    &__email {
+        margin-left: 30px;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: -40px;
+            // background-color: #fff;
+            background-image: url(../../images/icon/email.svg);
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+        }
+
+    }
+
+    &__wrap {
+        outline: 1px solid red;
+    }
+
+    &__phone {
+        margin-bottom: 10px;
+    }
+
+    &__email {
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        margin-bottom: 20px;
+    }
+
+    &__social a {
+        color: #ffffff;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+}
