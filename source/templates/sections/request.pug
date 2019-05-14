@@ -1,5 +1,6 @@
 .request
-    .container
+    .request__mask
+        .container
             .row
                 .col
                     .request__title Оставьте заявку
@@ -8,12 +9,16 @@
                 .col
                     form.form-group(action="" method="post")
                         input(type="text" placeholder="Ваше имя" class="form-input")
-                        img(src="images/phone.png", alt="", class="form-icon")
+                        .input__icon
+                            .icon-user
                         input(type="tel" placeholder="Ваш телефон" class="form-input")
-                        img(src="images/phone.png", alt="", class="form-icon")
+                        .input__icon
+                            .icon-mobile
                         input(type="email" placeholder="Ваш E-mail" class="form-input")
-                        img(src="images/phone.png", alt="", class="form-icon")
-                    input(type="checkbox") 
-                    label Я согласен(а) на обработку моих персональных данных.
-                    button.btn.request-btn.btn-danger Отправить заявку 
-                        
+                        .icon-envelope-o
+                        label.checkbox 
+                            input(type="checkbox")#checkbox__request
+                            span.checkbox__custome
+                            span.checkbox__text Я согласен(а) на обработку моих персональных данных.
+                    button.btn.request-btn.btn-danger Отправить заявку
+                            

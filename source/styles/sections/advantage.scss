@@ -1,20 +1,31 @@
 .advantage {
-    padding: 80px 0;
-    // background-image: url(../../images/architecture_0.jpg);
+    background-image: url(../../images/architecture_0.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background: linear-gradient( rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5) ), url('../../images/architecture_0.jpg');
     color: #ffffff;
+
+    &__mask {
+        padding: 70px 0 80px;
+        background-color: #111111;
+        // opacity: .62;
+        height: 100%;
+    }
 
     &__title {
         color: #ffffff !important;
+        margin-bottom: 30px;
         
         &:before {
             content: "";
-            background-color: white;
+            background-color: #fff;
         }
 
+    }
+
+    &__inner {
+        padding-top: 110px;
+        position: relative;
     }
 
     &__text {
@@ -35,20 +46,16 @@
     }
 
     &__img {
-        position: relative;
-
-        &:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 2px solid #fff;
-            background-color: transparent;
-        }
-
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        background-color: transparent;
     }
 
     &__heading {

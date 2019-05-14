@@ -28,7 +28,7 @@ gulp.task('server', function() {
 /* ---------- Pug complite ------------- */
 
 gulp.task('templates:complite', function buildHTML() {
-    return gulp.src('./source/templates/**/*.pug')
+    return gulp.src('./source/templates/index.pug')
     .pipe(pug({
         pretty: true
     }))
@@ -39,7 +39,7 @@ gulp.task('templates:complite', function buildHTML() {
 /* ---------- Style complite ------------- */
 
 gulp.task('styles:complite', function () {
-    return gulp.src('./source/styles/**/*.scss')
+    return gulp.src('./source/styles/main.scss')
       .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
       .pipe(gulp.dest('./build/styles'));
   });

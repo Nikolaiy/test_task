@@ -4,14 +4,139 @@
 
     &__wrapper {
         background-color: #e60000;
-        padding: 12px 10px 12px 50px;
+        padding-left: 10px;
+        box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.3);
+        z-index: 20;
+        border-radius: 3px;  
     }
 
-    & a {
-        text-decoration: none;
+    &__links {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        &-nested {
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+            background-color: #2e2e2e;
+            position: absolute;
+            min-width: 250px;
+            z-index: 9;
+            margin-top: 1px;
+            visibility: hidden;
+            transition: .3s;
+        }
+
+    }
+
+    &__link {
+        position: relative;
+
+        &:first-child::before {
+            font-family: 'icomoon';
+            content: "\f00c";
+            font-size: 20px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            visibility: hidden;
+            color: #fff;
+        }
+
+        a {
+            display: block;
+            padding: 15px 35px 14px 30px;
+            line-height: 28px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #fff;
+            transition: .3s;
+            
+            &:hover {
+                background-color: #2e2e2e;
+                cursor: pointer;
+            }
+
+        }
+
+        &-nested a {
+            line-height: 12px;
+
+            &:first-child {
+                margin-top: 15px;
+            }
+
+            &:last-child {
+                margin-bottom: 20px;
+            }
+
+            &:hover {
+                background-color: #222222;
+            }
+
+        }
+
+        &:hover > ul {
+            visibility: visible;
+        }
+
+    }
+
+    &__action {
+        padding: 13px 30px 15px 0px;
+        text-align: right;
+
+        & a {
+            text-decoration: none;
+        }
+    }
+
+    &__action a + a {
+        margin-left: 25px;
+    }
+
+    &__icon {
+        font-size: 26px;
         color: #ffffff;
-        font-size: 16px;
-        margin-right: 40px;
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// & ul.nav__links {
+//     padding-left: 0;
+//     margin-bottom: 0;
+// }
+
+// & li.nav__link {
+//     list-style: none;
+    
+//     & a {
+//         text-decoration: none;
+//         display: inline-block;
+//         color: #ffffff;
+//         font-size: 16px;
+//         padding: 15px 25px 15px 20px;
+//         line-height: 28px;
+//         transition: .3s;
+
+//         &:hover {
+//             
+//         }
+//     }
+
+// }

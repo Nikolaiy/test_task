@@ -2,7 +2,12 @@
     padding: 80px 0;
 
     &__block-img {
-        margin-top: 10px;
+        margin-top: 10px; 
+
+        & a {
+            cursor: pointer;
+        }
+
     }
 
     &__wraper {
@@ -16,6 +21,7 @@
 
     &-btn {
         padding: 10px 40px;
+        box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.3);
     }
 
 }

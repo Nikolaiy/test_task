@@ -1,15 +1,34 @@
 nav.nav
     .container
-        .row.nav__wrapper
+        .row.nav__wrapper.justify-content-between
             .col-10
-                - var items = ["Услуги", "О нас", "Портфолио", "Контакты", "Отзывы", "Новости"]
-                each item in items
-                    if item == "Услуги"
-                        a.nav__link.nav__link-active(href="#")=item
-                    else
-                        a.nav__link(href="#")=item
+                ul.nav__links
+                    li.nav__link
+                        a.nav__link-active(href="#") Услуги
+                        ul.nav__links-nested
+                            li.nav__link-nested
+                                - var items = ["Создание сайта", "Продвижение сайтов", "Создание логотипов", "Создание логотипов"]
+                                each item in items
+                                    a(href="#")=item
+                    li.nav__link
+                        a(href="#") О нас
+                    li.nav__link
+                        a(href="#") Портфолио
+                    li.nav__link
+                        a(href="#") Контакты
+                    li.nav__link
+                        a(href="#") Отзывы
+                    li.nav__link
+                        a(href="#") Новости
             .col.nav__action
-                a(href="#"): img(src="../images/icon/search.svg", alt="")
-                a(href="#"): img(src="../images/icon/basket.svg", alt="")
-                a(href="#"): img(src="../images/icon/account.svg", alt="")
+                a(href="#"): i.nav__icon.icon-search
+                a(href="#"): i.nav__icon.icon-shopping-cart
+                a(href="#"): i.nav__icon.icon-enter
                 
+
+                        //- - var items = ["Услуги", "О нас", "Портфолио", "Контакты", "Отзывы", "Новости"]
+                        //- each item in items
+                        //-     if item == "Услуги"
+                        //-         a.nav__link-active(href="#")=item
+                        //-     else
+                        //-         a(href="#")=item

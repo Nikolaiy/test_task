@@ -1,5 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Open Sans";
     font-weight: 400;
     font-size: 14px;
+}
+
+a {
+    text-decoration: none;
 }

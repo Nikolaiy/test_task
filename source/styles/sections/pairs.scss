@@ -8,3 +8,53 @@
     }
 
 }
+
+.slider {
+    position: relative;
+
+    &__inner img {
+        margin: 0 auto;
+    }
+
+    &__inner {
+
+        & button {
+            border: none;
+            background-color: transparent;
+        }
+
+    }
+
+}
+
+.slick-btn {
+    position: absolute;
+    top: 0;
+}
+.slick-next {
+    left: 0;
+
+    &:before {
+        content: "\f104";
+        font-family: 'icomoon';
+        font-size: 40px;
+        line-height: 24px;
+        color: #a7a7a7;
+        text-shadow: 3px 6px 7px rgba(0, 0, 0, 0.3);
+    }
+
+}
+
+.slick-prev {
+    right: 0;
+
+    &:before {
+        content: "\f105";
+        font-family: 'icomoon';
+        font-size: 40px;
+        line-height: 24px;
+        color: #a7a7a7;
+        text-shadow: 3px 6px 7px rgba(0, 0, 0, 0.3);
+    }
+
+}

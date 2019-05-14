@@ -4,8 +4,10 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        link(rel="stylesheet", href="styles/main.css")
         link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet")
+        link(rel="stylesheet", href="styles/fonts.css")
+        link(rel="stylesheet", href="styles/slick.css")
+        link(rel="stylesheet", href="styles/main.css")
         title Promo
     body
         include sections/header
@@ -23,3 +25,7 @@ html(lang="en")
         include sections/contact
         include sections/pairs
         include sections/footer
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js")
+        script(src="js/slick.min.js")
+        script(src="js/main.js")

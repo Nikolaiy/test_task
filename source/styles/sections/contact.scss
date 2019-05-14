@@ -6,8 +6,8 @@
     background-size: cover;
 
     &__block {
-        height: 600px;
-        padding-top: 200px;
+        min-height: 600px;
+        padding-top: 160px;
         padding-left: 500px;
         padding-right: 80px;
         float: left;
@@ -34,43 +34,39 @@
     }
 
     &__phone {
-        margin-left: 30px;
+        padding-left: 30px;
         position: relative;
 
         &:before {
-            content: "";
+            content: "\f10b";
+            font-size: 25px;
+            color: red;
+            font-family: 'icomoon';
             position: absolute;
-            top: 5px;
-            left: -40px;
-            // background-color: #fff;
-            background-image: url(../../images/icon/email.svg);
-            background-repeat: no-repeat;
-            width: 20px;
-            height: 20px;
+            top: -8px;
+            left: 0;
         }
 
     }
 
     &__email {
-        margin-left: 30px;
+        padding-left: 30px;
         position: relative;
 
         &:before {
-            content: "";
+            content: "\f003";
+            font-size: 16px;
+            color: red;
+            font-family: 'icomoon';
             position: absolute;
-            top: 5px;
-            left: -40px;
-            // background-color: #fff;
-            background-image: url(../../images/icon/email.svg);
-            background-repeat: no-repeat;
-            width: 20px;
-            height: 20px;
+            top: 0;
+            left: 0;
         }
 
     }
 
     &__wrap {
-        outline: 1px solid red;
+        max-width: 300px;
     }
 
     &__phone {
@@ -86,9 +82,29 @@
     }
 
     &__social a {
-        color: #ffffff;
-        text-decoration: none;
+        display: inline-block;
         margin-right: 10px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #fff;
+        text-align: center;
+    }
+        
+}
+
+.icon {
+
+    &-facebook:before,
+    &-twitter:before,
+    &-bold:before {
+        color: #2c2c2c;
+        font-size: 16px;
+        vertical-align: middle;
+    }
+
+    &-bold:before {
+        font-weight: bold;
     }
 
 }

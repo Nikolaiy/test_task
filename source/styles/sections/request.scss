@@ -1,12 +1,16 @@
 .request {
-    padding: 80px 0;
     background-image: url(../../images/architecture_0.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     text-align: center;
     color: #fff;
-    // filter: brightness(0.60);
+
+    &__mask {
+        padding: 80px 0;
+        background-color: #111111;
+        // opacity: .62;
+    } 
 
     &__title {
         position: relative;
@@ -42,19 +46,88 @@
 
 .form-group {
     margin: 0 auto;
-    width: 600px;
+    max-width: 515px;
 
     & input {
         color: #000;
         font-size: 13px;
         font-weight: bold;
-        margin-bottom: 20px;
-        padding: 10px;
+        margin-bottom: 5px;
+        padding: 10px 40px 10px 10px;
         width: 500px;
+        border: none;
+        border-radius: 3px;
     }
+
 }
 
-.form-icon {
+.checkbox {
+    display: flex;
+    align-items: center;
+
+    & input[type="checkbox"] {
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+        margin-left: -5px;
+
+        &:checked {
+
+            &~.checkbox__custome {
+
+                &:before {
+                    content: "\f00c";
+                    font-family: 'icomoon';
+                    color: #e60000;
+                    position: absolute;
+                    top: -8px;
+                    left: 0;
+                    font-size: 18px;
+                }
+
+            }
+
+        }
+
+    }
+
+    &__custome {
+        content: "";
+        position: relative;
+        display: block;
+        height: 15px;
+        width: 15px;
+        border: 1px solid #fff;
+        margin-right: 20px;
+        // background-color: transparent;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            right: 2px;
+            bottom: 2px;
+        }
+
+    }
+
+}
+
+.input-icon {
     position: relative;
-    left: -30px;
+}
+
+.icon-envelope-o,
+.icon-mobile,
+.icon-user {
+    position: relative;
+    top: -35px;
+    right: -44%;
+    font-size: 20px;
+    color: #e60000;
+}
+
+.icon-mobile {
+    font-size: 25px;
 }
