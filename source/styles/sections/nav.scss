@@ -4,10 +4,16 @@
 
     &__wrapper {
         background-color: #e60000;
-        padding-left: 10px;
-        box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.3);
+        padding-left: 30px;
+        padding-right: 30px;
+        box-shadow: 3px 5px 5px 1px rgba(0, 0, 0, 0.21);
         z-index: 20;
-        border-radius: 3px;  
+        border-radius: 3px;
+
+        & .col-10 {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
     }
 
     &__links {
@@ -35,21 +41,20 @@
         position: relative;
 
         &:first-child::before {
-            font-family: 'icomoon';
-            content: "\f00c";
-            font-size: 20px;
+            content: "";
+            background-image: url(../images/icon/arrow-point.png);
+            background-repeat: no-repeat;
+            width: 9px;
+            height: 4px;
             position: absolute;
-            right: 0;
+            right: 15px;
             top: 50%;
-            transform: translateY(-50%);
-            visibility: hidden;
-            color: #fff;
         }
 
         a {
             display: block;
-            padding: 15px 35px 14px 30px;
-            line-height: 28px;
+            padding: 15px 35px 15px 30px;
+            line-height: 28px;                                                                                                                                                                                  
             text-decoration: none;
             font-size: 16px;
             color: #fff;
@@ -86,7 +91,7 @@
     }
 
     &__action {
-        padding: 13px 30px 15px 0px;
+        padding: 18px  0px;
         text-align: right;
 
         & a {
@@ -98,45 +103,4 @@
         margin-left: 25px;
     }
 
-    &__icon {
-        font-size: 26px;
-        color: #ffffff;
-    }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-// & ul.nav__links {
-//     padding-left: 0;
-//     margin-bottom: 0;
-// }
-
-// & li.nav__link {
-//     list-style: none;
-    
-//     & a {
-//         text-decoration: none;
-//         display: inline-block;
-//         color: #ffffff;
-//         font-size: 16px;
-//         padding: 15px 25px 15px 20px;
-//         line-height: 28px;
-//         transition: .3s;
-
-//         &:hover {
-//             
-//         }
-//     }
-
-// }

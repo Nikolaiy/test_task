@@ -8,21 +8,38 @@
         margin-bottom: 30px;
     }
 
+    &__img {
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.23);
+    }
+
     &__date {
-        font-size: 13px;
-        font-weight: bold;
-        color: #c2c2c2;
-        margin-top: 10px;
+        font-weight: 300;
+        line-height: 14px;
+        color: #a1a0a0;
+        margin-top: 15px;
+        margin-bottom: 5px;
     }
 
     &__heading {
-        font-size: 13px;
-        font-weight: bold;
+        color: #1c1c1c;;
+        font-weight: 600;
+        line-height: 18px;
         margin-bottom: 10px;
     }
 
     &__desc {
-        font-size: 13px;
+        color: #2a2a2a;
+        font-weight: 300;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            // background-image: linear-gradient(to bottom, rgba (255, 255, 255, 0), rgba(0, 0, 0, 0));
+        }
+
     }
 
 }

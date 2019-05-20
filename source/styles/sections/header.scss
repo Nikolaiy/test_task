@@ -12,44 +12,44 @@
 
         & .tel {
             font-size: 16px;
-            font-weight: bold;
             color: #070707;
             margin: 0 0 -5px;
+            font-weight: 600;
+            line-height: 17px;
+            margin-bottom: 0px;
         }
 
         & .call-free {
             color: #1d1d1d;
             font-weight: 300;
-            line-height: 19px;
         }
 
         &:before {
             content: "";
-            background-image: url(../../images/icon/phone.svg);
+            background-image: url(../images/icon/phone.png);
             background-repeat: no-repeat;
             position: absolute;
-            width: 25px;
-            height: 28px;
+            width: 26px;
+            height: 27px;
             top: 20%;
-            left: -20px;
+            left: -25px;
         }
 
     }
 
     &__address {
         color: #1d1d1d;
-        font-size: 14px;
         line-height: 19px;
 
         &:before {
             content: "";
-            background-image: url(../../images/icon/local.svg);
+            background-image: url(../images/icon/map_market.png);
             background-repeat: no-repeat;
             position: absolute;
-            width: 25px;
-            height: 28px;
+            width: 21px;
+            height: 27px;
             top: 20%;
-            left: -20px;
+            left: -25px;
         }
     }
 }

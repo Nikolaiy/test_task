@@ -1,19 +1,32 @@
 .work {
-    padding: 80px 0;
+    padding: 75px 0;
+
+    &__title {
+        margin-bottom: 75px;
+    }
 
     &__wrap {
         margin-bottom: 20px;
+
+        &:before {
+            content: "";
+            margin: 20px 0;
+            padding: 0;
+            height: 0;
+            border: none;
+            border-top: 2px dashed #ddd;
+        }
+
     }
 
     &__inner {
         position: relative;
         padding-bottom: 10px;
-        padding-right: 40px;
-        padding-left: 40px;
+        padding-right: 50px;
+        padding-left: 50px;
         text-align: right;
 
         &-reverse {
-            padding-left: 40px;
             text-align: left;
         }
 
@@ -23,14 +36,15 @@
             position: absolute;
             top: -5px;
             right: -15px;
-            background-color: red;
+            background-color: #e60000;
             width: 30px;
             height: 30px;
             border-radius: 50%;
             color: #fff;
             font-size: 16px;
             text-align: center;
-            font-weight: bold;
+            font-weight: 600;
+            line-height: 26px;
 
             &-reverse {
                 right: auto;
@@ -39,19 +53,35 @@
 
         }
     
-        &__min {
+    &__min {
 
-            &-title {
-                font-weight: 700;
-                font-style: 16px;
-                margin-bottom: 5px;
-            }
+        &-title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 14px;
+            color: #1c1c1c;
+            margin-bottom: 10px;
+        }
 
-            &-text {
-                font-weight: 500;
-                font-size: 14px;
+        &-text {
+            max-width: 300px;
+            line-height: 19px;
+            color: #2a2a2a;
+            
+            &:nth-child(even) {
+                float: right;
             }
 
         }
 
+    }
+
+}
+
+.hr-dashed {
+    position: relative;
+    border-top: 2px dashed #ddd;
+    transform: rotate(90deg);
+    width: 350px;
+    top: 190px;
 }

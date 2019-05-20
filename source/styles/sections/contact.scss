@@ -1,15 +1,15 @@
 .contact {
     color: #ffffff;
-    background-image: url(../../images/karta.jpg);
+    background-image: url(../images/karta.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     &__block {
         min-height: 600px;
-        padding-top: 160px;
-        padding-left: 500px;
-        padding-right: 80px;
+        padding-top: 115px;
+        padding-left: 510px;
+        padding-right: 160px;
         float: left;
         background-color: #2c2c2c;
     }
@@ -33,17 +33,27 @@
         }
     }
 
+    &__desc {
+        color: #fefefe;
+        font-weight: 300;
+        margin-top: 20px;   
+    }
+
     &__phone {
         padding-left: 30px;
         position: relative;
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 10px;
 
         &:before {
-            content: "\f10b";
-            font-size: 25px;
-            color: red;
-            font-family: 'icomoon';
+            content: "";
+            width: 11px;
+            height: 18px;
+            background-image: url(../images/icon/contact_mobile.png);
+            background-repeat: no-repeat;
             position: absolute;
-            top: -8px;
+            top: 0;
             left: 0;
         }
 
@@ -52,14 +62,17 @@
     &__email {
         padding-left: 30px;
         position: relative;
+        font-size: 16px;
+        line-height: 18px;
 
         &:before {
-            content: "\f003";
-            font-size: 16px;
-            color: red;
-            font-family: 'icomoon';
+            content: "";
+            width: 16px;
+            height: 12px;
+            background-image: url(../images/icon/contact_email.png);
+            background-repeat: no-repeat;
             position: absolute;
-            top: 0;
+            top: 4px;
             left: 0;
         }
 
@@ -69,42 +82,18 @@
         max-width: 300px;
     }
 
-    &__phone {
-        margin-bottom: 10px;
-    }
-
-    &__email {
-        margin-bottom: 10px;
-    }
-
     &__desc {
         margin-bottom: 20px;
     }
 
     &__social a {
-        display: inline-block;
         margin-right: 10px;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background-color: #fff;
-        text-align: center;
+
+        & img {
+            width: 26px;
+            height: 26px;
+        }
+
     }
         
-}
-
-.icon {
-
-    &-facebook:before,
-    &-twitter:before,
-    &-bold:before {
-        color: #2c2c2c;
-        font-size: 16px;
-        vertical-align: middle;
-    }
-
-    &-bold:before {
-        font-weight: bold;
-    }
-
 }

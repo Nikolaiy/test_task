@@ -4,7 +4,7 @@ nav.nav
             .col-10
                 ul.nav__links
                     li.nav__link
-                        a.nav__link-active(href="#") Услуги
+                        a.nav__link-active.img-arrow(href="#") Услуги
                         ul.nav__links-nested
                             li.nav__link-nested
                                 - var items = ["Создание сайта", "Продвижение сайтов", "Создание логотипов", "Создание логотипов"]
@@ -21,14 +21,6 @@ nav.nav
                     li.nav__link
                         a(href="#") Новости
             .col.nav__action
-                a(href="#"): i.nav__icon.icon-search
-                a(href="#"): i.nav__icon.icon-shopping-cart
-                a(href="#"): i.nav__icon.icon-enter
-                
-
-                        //- - var items = ["Услуги", "О нас", "Портфолио", "Контакты", "Отзывы", "Новости"]
-                        //- each item in items
-                        //-     if item == "Услуги"
-                        //-         a.nav__link-active(href="#")=item
-                        //-     else
-                        //-         a(href="#")=item
+                a(href="#"): img(src="images/icon/search.png", alt="")
+                a(href="#"): img(src="images/icon/basket.png", alt="")
+                a(href="#"): img(src="images/icon/login.png", alt="")

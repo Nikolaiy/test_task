@@ -87,13 +87,28 @@ gulp.task('copy:fonts', function() {
 
 gulp.task('copy', gulp.parallel('copy:images', 'copy:fonts'));
 
+/* ----------- Soursemap --------*/
+
+gulp.task('js', function() {
+    return gulp.src([
+            'source/jquery.fancybox.min.js',
+            'source/js/slick.min.js',
+            'source/js/main.js'
+        ])
+        .pipe(sourcemaps.init())
+        .pipe(concat('main.min.js'))
+        .pipe(uglify())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('./build/js'));
+});
+
 
 /* ---------- Watchers ------------- */
 
 gulp.task('watch', function () {
     gulp.watch('./source/templates/**/*.pug', gulp.series('templates:complite'));
     gulp.watch('./source/styles/**/*.scss', gulp.series('styles:complite'));
-    // gulp.watch('./source/js/**/*.js', gulp.series('js'));
+    gulp.watch('./source/js/**/*.js', gulp.series('js'));
 });
 
 gulp.task('default', gulp.series (
@@ -102,8 +117,6 @@ gulp.task('default', gulp.series (
     gulp.parallel('watch', 'server')
     ) 
 );
-
-// , 'sprite'
 
 
 

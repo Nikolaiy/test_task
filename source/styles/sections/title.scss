@@ -2,15 +2,15 @@
     position: relative;
     text-align: center;
     color: #2d2d2d;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 700;
-    line-height: 13.29px;
+    line-height: 14px;
     margin-bottom: 50px;
 
     &:before {
         content: "";
         position: absolute;
-        bottom: -20px;
+        bottom: -25px;
         left: 50%;
         transform: translateX(-50%);
         width: 70px;

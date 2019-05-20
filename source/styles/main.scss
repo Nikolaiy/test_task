@@ -2,6 +2,10 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 @import "global/base";
+@import "global/fonts";
+
+// @import "lib/jquery.fancybox.min";
+@import "lib/slick";
 
 @import "sections/title";
 @import "sections/header";

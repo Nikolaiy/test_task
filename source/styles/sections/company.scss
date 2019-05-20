@@ -1,5 +1,5 @@
 .company {
-    padding: 80px 0 40px;
+    padding: 70px 0 80px;
 
     &__title {
         float: left;
@@ -8,7 +8,7 @@
         color: #2d2d2d;
         font-size: 30px;
         font-weight: 700;
-        line-height: 13.29px;
+        line-height: 14px;
         margin-bottom: 60px;
 
         &:before {
@@ -24,7 +24,8 @@
     }
 
     &__desc {
-        font-size: 13px;
+        color: #2a2a2a;
+        line-height: 19px;
     }
 
     &__wraper {
@@ -32,23 +33,26 @@
     }
 
     &__number {
-        font-size: 60px;
+        font-size: 72px;
         font-weight: 700;
-        color: red;
-        line-height: 50px;
-        text-shadow: 4px 2px 5px rgba(141, 141, 141, 0.5);
+        color: #e60000;
+        text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.1);
+        line-height: 23px;
     }
 
     &__heading {
-        font-weight: 600;
+        color: #313131;
         margin-top: 10px;
+        font-size: 24px;
+        font-weight: 600;
         margin-bottom: 10px;
+        line-height: 32px;
     }
 
     &__text {
-        font-size: 14px;
         margin-bottom: 40px;
-        color: #b3b3b3;
+        color: #2d2d2d;
+        opacity: 0.59;
     }
 
 }

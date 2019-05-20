@@ -1,5 +1,5 @@
 .hero {
-    background-image: url(../../images/bg_font.jpg);
+    background-image: url(../images/bg_font.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -10,20 +10,39 @@
         color: #282828;
         font-size: 40px;
         font-weight: 700;
-        line-height: 52.03px;
+        line-height: 52px;
         margin-bottom: 15px;
     }
 
     &__desc {
-        margin-bottom: 30px;
-        font-weight: 700;
+        margin-bottom: 40px;
+        font-size: 16px;
+        color: 000000;
+        line-height: 19px;
     }
 
     &__btn {
-        width: 175px;
-        font-size: 14px;
-        padding: 15px 20px;
+        width: 195px;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 6px 20px 7px 25px;
         margin-right: 10px;
+    }
+
+}
+
+#modal {
+    display: none;
+    width: 300px;
+
+    & input {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        outline: none;
+        height: 40px;
+        border: 1px solid #e6e6e6;
+        padding: 0 10px;
     }
 
 }
